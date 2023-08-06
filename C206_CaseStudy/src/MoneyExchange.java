@@ -25,6 +25,20 @@ public class MoneyExchange {
 		System.out.println("2. Sign Up");
 		System.out.println("3. Exit");
 		int opt = Helper.readInt("Enter option: ");
+		if(opt == 1) {
+			String usr = Helper.readString("Enter username");
+			String pwd = Helper.readString("Enter username");
+			
+			for (Account acc : accList) {
+				if(acc.getUsername().equalsIgnoreCase(usr)) {
+					if(!acc.getPassword().equals(pwd)) {
+						System.out.println("Wrong password entered!!!");
+					} else {
+						
+					}
+				}
+			}
+		}
 		
 		
 		
@@ -33,6 +47,36 @@ public class MoneyExchange {
 
 	public static void signUp() {
 
+	}
+	
+	public static void loggedInMenuMain() {
+		System.out.println("Menu");
+		System.out.println("1. Users");
+		System.out.println("2. Accounts");
+		System.out.println("3. Transactions");
+		System.out.println("4. Currencies");
+		System.out.println("5. Feedback");
+		int opt = Helper.readInt("Pleaae choose an option: ");
+		
+		if(opt == 1) {
+			// Add users selection menu
+		} else if (opt == 2) {
+			// Add accounts selection menu
+		} else if (opt == 3) {
+			// Add transactions menu
+		} else if (opt == 4) {
+			System.out.println("1. View all currencies");
+			System.out.println("2. Add a new currency");
+			System.out.println("3. Edit an existing currency");
+			System.out.println("4. Delete an existing currency");
+			
+			opt = Helper.readInt("Please choose an option: ");
+			
+			
+			
+		} else if (opt == 5) {
+			// Add feedback selections menu
+		}
 	}
 
 
