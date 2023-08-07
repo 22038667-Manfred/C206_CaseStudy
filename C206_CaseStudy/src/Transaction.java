@@ -5,12 +5,21 @@ public class Transaction {
 	private int amount;
 	private int convertAmt;
 	private String currency;
-	public Transaction(Account acc, int amount, int convertAmt, String currency) {
+	private String accSentTo;
+	public Transaction(Account acc, int amount, int convertAmt, String currency,String accSentTo) {
 		this.acc = acc;
 		this.accId = acc.getUsername();
 		this.amount = amount;
 		this.convertAmt = convertAmt;
 		this.currency = currency;
+		this.accSentTo = accSentTo;
+	}
+	
+	public String getAccSentTo() {
+		return this.accSentTo;
+	}
+	public void setAccSentTo(String accSentTo) {
+		this.accSentTo = accSentTo;
 	}
 	public Account getAcc() {
 		return acc;
