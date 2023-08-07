@@ -100,11 +100,14 @@ public class MoneyExchange {
 					case 5:
 						searchCurr();
 						break;
+					case 6:
+						Menu();
+						opt = Helper.readInt("Please choose an option: ");
+						break;
 					default:
 						System.out.println("Invalid choice entered");
 					}
-					Menu();
-					opt = Helper.readInt("Please choose an option: ");
+					
 				}
 			} else if (opt == 5) {
 				// Add feedback selections menu
