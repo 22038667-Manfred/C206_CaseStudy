@@ -24,7 +24,12 @@ public class Account {
 		this.password = password;
 		this.contact = contact;
 	}
-
+	
+	
+	
+	public Users getUsers() {
+		return this.user;
+	}
 	public String getUsername() {
 		return username;
 	}
